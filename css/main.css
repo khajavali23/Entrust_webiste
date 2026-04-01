@@ -10850,10 +10850,11 @@ body .ui-tooltip {
   background-size: 0% 1px, 100% 1px;
 }
 .tp-service-content {
-  padding: 40px 40px;
-  padding-bottom: 25px;
-  background-color: var(--tp-common-white);
-  box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.05);
+    padding: 40px 40px;
+    padding-bottom: 25px;
+    background-color: var(--tp-common-white);
+    box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.05);
+    border: solid 1px #f3f3f3;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-service-content {
@@ -16945,7 +16946,7 @@ p.checkout-coupon input[type=text]:focus {
 .tp-service-thumb {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+   
 }
 
 /* Image style */
@@ -17089,5 +17090,86 @@ body.mfp-open {
 .tp-service-item {
     border-radius: 10px;
     overflow: hidden;
+}
+
+
+.brand-link:hover {
+  opacity: 0.8;
+}
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.brand-link {
+ color: rgba(255, 255, 255, 0.6) !important;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.brand-link:hover {
+  color: #ffffff; /* change to white on hover */
+}
+.image-frame {
+  
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02); /* slight glass effect */
+  transition: all 0.3s ease;
+}
+
+.image-frame img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.image-frame:hover {
+  border-color: #C8A96A; /* gold highlight */
+  transform: translateY(-5px);
+}
+
+.content-box {
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03); /* glass effect */
+  border: 1px solid rgba(200, 169, 106, 0.2); /* soft gold border */
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.content-box:hover {
+  border-color: #C8A96A;
+  transform: translateY(-5px);
+
+}
+
+
+.hover-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: 0.4s ease;
+}
+
+.tp-product-2-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.tp-product-2-thumb:hover .hover-content {
+  transform: translateY(0);
+}
+.hover-content p {
+  color: #ffffff;
 }
 
